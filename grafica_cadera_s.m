@@ -16,7 +16,7 @@ xR = 0:0.05:100;
 
 % Componente Y de puntos originales
 % Se termina en el mismo punto en el que se empieza
-yH = [11,10,13,14,11,8,7,6,7,9,10,14,19,25,29,31,29,25,20,15,11];
+yH = [8,9,11,12,10,9,6,5,4,4,3,0,-15,-18,-15,-10,3,6,10,10,8];
 
 % Para crear un vector de valores aleatorios entre 1 y 21 multiplicado por 
 % 5 que se suman a los valores originales de la componente Y
