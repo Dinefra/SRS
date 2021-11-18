@@ -41,8 +41,7 @@ m = m + 3*rand(1,2001);
 
 % Representacion de la curva de movimiento
 plot(xR*duration,m);
-title('Gráfica de subida de tobillo');
-xlabel('Ciclo de zancada (%)');
+xlabel('Tiempo de movimiento (ms)');
 ylabel('Ángulo del tobillo (º)');
 hold on;
 
