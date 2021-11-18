@@ -12,6 +12,7 @@ xH(1) = 0;
 xH(end) = 100;
 
 % Componente X de evaluacion - ?? ISA MIRAR VIDEO
+%pendiente revisar todavia 
 xR = 0:0.005:100; 
 
 % Componente Y de puntos originales

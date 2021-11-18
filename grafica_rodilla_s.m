@@ -4,6 +4,7 @@
 xH = 0:5:100;
 
 % Distribucion original con variable aleatoria
+%xH = XH + + 0.01*rand(1,21);
 xH = xH + 0.05*rand(1,21);
 
 % Para asegurarnos de que la componente X va de 0 a 100 a pesar de la 
@@ -12,11 +13,12 @@ xH(1) = 0;
 xH(end) = 100;
 
 % Componente X de evaluacion - ?? ISA MIRAR VIDEO
-xR = 0:0.005:100; 
+% Pendiente de revisar
+xR = 0:0.005:100;
 
 % Componente Y de puntos originales
 % Se termina en el mismo punto en el que se empieza
-yH = [11,10,13,14,11,8,7,6,7,9,10,14,19,25,29,31,29,25,20,15,11]; % CAMBIAR
+yH = [6,10,20,26,28,27,26,27,35,45,55,55,75,87,93,87,65,50,30,10,6];
 
 % Para crear un vector de valores aleatorios entre 1 y 21 multiplicado por 
 % 5 que se suman a los valores originales de la componente Y
@@ -42,3 +44,4 @@ m = m + 3*rand(1,20001);
 % Representacion de la curva de movimiento
 plot(xR*duration,m);
 hold on;
+
