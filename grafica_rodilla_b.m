@@ -42,4 +42,6 @@ m = m + 3*rand(1,2001);
 % Representacion de la curva de movimiento
 plot(xR*duration,m);
 title('Gráfica de bajada de rodilla');
+xlabel('Ciclo de zancada (%)');
+ylabel('Ángulo de la rodilla (º)');
 hold on;
