@@ -63,6 +63,41 @@ patch('Faces',F,'Vertices',PiernaSuperior2,'FaceVertexCData',C,'FaceColor','flat
 axis equal
 
 %Parte de cadera no me acaba de convencer
-Cadera=[-10,-5,140;15,-5,140;15,40,140;-10,40,140;-10,-5,160;15,-5,160;15,40,160;-10,40,160];
+Cadera=[-10,-5,140;15,-5,140;15,55,140;-10,55,140;-10,-5,160;15,-5,160;15,55,160;-10,55,160];
 patch('Faces',F,'Vertices',Cadera,'FaceVertexCData',C,'FaceColor','flat');
 axis equal
+
+%otra pierna
+pieDTalon2=[0,35,0;20,35,0;20,50,0;0,50,0;0,35,10;20,35,10;20,50,10;0,50,10];
+patch('Faces',F,'Vertices',pieDTalon2,'FaceVertexCData',C,'FaceColor','flat');
+axis equal
+
+pieDPunta2=[20,35,0;40,35,0;35,50,0;20,50,0;20,35,10;40,35,5;35,50,5;20,50,10];
+patch('Faces',F,'Vertices',pieDPunta2,'FaceVertexCData',C,'FaceColor','flat');
+axis equal
+
+
+Pierna4=[5,35,10;15,35,10;15,50,10;5,50,10;5,35,70;15,35,70;15,50,70;5,50,70];
+patch('Faces',F,'Vertices',Pierna4,'FaceVertexCData',C,'FaceColor','flat');
+axis equal
+
+Pierna5=[0,35,10;5,35,10;5,50,10;0,50,10;-5,35,45;5,35,45;5,50,45;-5,50,45];
+patch('Faces',F,'Vertices',Pierna5,'FaceVertexCData',C,'FaceColor','flat');
+axis equal
+
+Pierna6=[-5,35,45;5,35,45;5,50,45;-5,50,45;0,35,70;5,35,70;5,50,70;0,50,70];
+patch('Faces',F,'Vertices',Pierna6,'FaceVertexCData',C,'FaceColor','flat');
+axis equal
+
+PiernaSuperior3=[0,35,70;15,35,70;15,50,70;0,50,70;-10,30,120;15,30,120;15,55,120;-10,55,120];
+patch('Faces',F,'Vertices',PiernaSuperior3,'FaceVertexCData',C,'FaceColor','flat');
+axis equal
+
+PiernaSuperior4=[-10,30,120;15,30,120;15,55,120;-10,55,120;-10,30,140;15,30,140;15,55,140;-10,55,140];
+patch('Faces',F,'Vertices',PiernaSuperior4,'FaceVertexCData',C,'FaceColor','flat');
+axis equal
+
+xlabel('x');
+ylabel('y');
+zlabel('z');
+view(3);
