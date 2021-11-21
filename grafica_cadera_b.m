@@ -22,8 +22,8 @@ yH = [46,40,35,30,25,15,10,5,2,-2,-4,-6,-5,0,10,23,34,45,47,49,46];
 % 5 que se suman a los valores originales de la componente Y
 yH = yH + 5*rand(1,21);
 
-% Definicion del minimo y maximo del movimiento - DUDA: PREGUNTAR AL PROFE En segundos??
-minim = 0.88;
+% Definicion del minimo y maximo del movimiento
+minim = 0.96;
 maxim = 1.5;
 
 % Duracion aleatoria del movimiento

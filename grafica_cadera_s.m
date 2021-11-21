@@ -22,7 +22,7 @@ yH = [8,9,11,12,10,9,6,5,4,4,3,0,-15,-18,-15,-10,3,6,10,10,8];
 % 5 que se suman a los valores originales de la componente Y
 yH = yH + 5*rand(1,21);
 
-% Definicion del minimo y maximo del movimiento - DUDA: PREGUNTAR AL PROFE En segundos??
+% Definicion del minimo y maximo del movimiento
 minim = 0.88;
 maxim = 1.5;
 
