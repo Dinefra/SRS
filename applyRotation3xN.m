@@ -1,12 +1,20 @@
 function modelRotated = applyRotation3xN(model,centerRotation,matrixRotation)
 
-% applyRotation3xN apply a rotation matrix to a model, taking a center of
-% rotation named centerRotation
-% Input:
-%    - model: original model to be rotated (3xN)
-%    - centerRotation: center of rotation (3x1)
-%    - matrixRotation: matrix of rotation (3x3)
+% Aplica una matriz de rotación a un modelo teniendo un centro de giro 
 
-modelRotated = matrixRotation*(model-repmat(centerRotation,size(model,1),1));
-modelRotated = modelRotated + repmat(centerRotation,size(model,1),1);
+% Input:
+%    - model: modelo a rotar (3xN - 3 vértices, cada vértice tiene N 
+%                             componentes (x,y,z))
+%    - centerRotation: centro de rotación (3x1 porque es un punto (x,y,z))
+%    - matrixRotation: matriz de rotación (3x3)
+
+% Se obtiene el modelo rotado tras multiplicar la matriz de rotación por el
+% modelo al que se le ha restado un vector de filas (size(model,1)) y
+% columnas (1) con respecto al centro de rotación
+modelRotated = matrixRotation*(model-repmat(centerRotation,size(model,1),1))';
+
+% Se calcula la traspuesta del modelo rotado y se le suma un vector de filas 
+% (size(model,1)) y columnas (1) con respecto al centro de rotación
+modelRotated = modelRotated' + repmat(centerRotation,size(model,1),1);
+
 end

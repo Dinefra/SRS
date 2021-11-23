@@ -11,11 +11,7 @@ function modelRotated = applyRotationNx3(model,centerRotation,matrixRotation)
 % Se obtiene el modelo rotado tras multiplicar la matriz de rotación por el
 % modelo al que se le ha restado un vector de filas (size(model,1)) y
 % columnas (1) con respecto al centro de rotación
-modelRotated = matrixRotation*(model-repmat(centerRotation,size(model,1),1))';
-
-% Se calcula la traspuesta del modelo rotado y se le suma un vector de filas 
-% (size(model,1)) y columnas (1) con respecto al centro de rotación
+modelRotated = matrixRotation*(model-repmat(centerRotation,size(model,1),1))'; % - ???
 modelRotated = modelRotated' + repmat(centerRotation,size(model,1),1);
-
 end
 
