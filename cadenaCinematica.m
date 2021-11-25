@@ -2,9 +2,14 @@
 % cambiar centro de rotacion a cada elemento.
 %sum... centro de rotacion --> suma de los 4 puntos / 4
 
+%function cadenaCinematica(YPRcadera, YPRrodilla, YPRtobillo)
+%YPRtobillo =[0,0,flexoextension]
+%YPRrodilla = [flexoextension,,]
+%YPRcadera = [flexoextension,,]
 
 %codigo de Borja copiado y pegado --> FALTA CAMBIARLO
 function cadenaCinematica(YPRtorso,YPRhombro,YPRcodo,YPRwrist)
+
 % YPRwrist = [pronosupinacion,flexoextension,0]
 % YPRcodo = [0,0,flexion]
 % YPRhombro = [rotacion,abduccion,flexoextension]
