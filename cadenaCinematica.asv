@@ -37,7 +37,6 @@ Rrodilla = rotationMatrix(YPRrodilla(1),YPRrodilla(2),YPRrodilla(3));
 Rcadera = rotationMatrix(YPRcadera(1),YPRcadera(2),YPRcadera(3));
 Rdedos = rotationMatrix(YPRdedos(1),YPRdedos(2),YPRdedos(3));
 
-% cambiar
 figure;
 patch('faces',f,'vertices',tobillo,'FaceVertexCData',color,'FaceColor','flat'),
 patch('faces',f,'vertices',rodilla,'FaceVertexCData',color,'FaceColor','flat');
@@ -46,13 +45,11 @@ patch('faces',f,'vertices',dedos,'FaceVertexCData',color,'FaceColor','flat');
 view(3);
 axis image;
 
-% rellenar
 % tobilloRotado = ;
 % rodillaRotada = ;
 % caderaRotada = ;
 % dedosRotados = ;
 
-% de referencia:
 % manoRotada = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(mano,...
 %     sum(antebrazo(1:4,:))/4,Rwrist),sum(brazo(1:4,:))/4,Rcodo),(torso(5,:)+torso(6,:))/2,Rhombro),sum(torso)/8,Rtorso);
 % antebrazoRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(antebrazo,...
@@ -62,12 +59,12 @@ axis image;
 % torsoRotado = applyRotationNx3(torso,...
 %     sum(torso)/8,Rtorso);
 
-figure;
-patch('faces',f,'vertices',tobilloRotado,'FaceVertexCData',color,'FaceColor','flat');
-patch('faces',f,'vertices',rodillaRotada,'FaceVertexCData',color,'FaceColor','flat');
-patch('faces',f,'vertices',caderaRotada,'FaceVertexCData',color,'FaceColor','flat');
-patch('faces',f,'vertices',dedosRotados,'FaceVertexCData',color,'FaceColor','flat');
-view(3);
-axis image;
+figure
+patch('faces',f,'vertices',torsoRotado,'FaceVertexCData',color,'FaceColor','flat')
+patch('faces',f,'vertices',brazoRotado,'FaceVertexCData',color,'FaceColor','flat')
+patch('faces',f,'vertices',antebrazoRotado,'FaceVertexCData',color,'FaceColor','flat')
+patch('faces',f,'vertices',manoRotada,'FaceVertexCData',color,'FaceColor','flat')
+view(3)
+axis image
 
 end
