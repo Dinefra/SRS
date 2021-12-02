@@ -41,18 +41,18 @@ axis equal
 % patch('Faces',F,'Vertices',DeoMenique,'FaceVertexCData',C,'FaceColor','flat');
 % axis equal
 
-Pierna1=[5,0,10;15,0,10;15,15,10;5,15,10;5,0,70;15,0,70;15,15,70;5,15,70];
+Pierna1=[0,0,10;15,0,10;15,15,10;0,15,10;0,0,70;15,0,70;15,15,70;0,15,70];
 patch('Faces',F,'Vertices',Pierna1,'FaceVertexCData',C,'FaceColor','flat');
 axis equal
 
 
-Pierna2=[0,0,10;5,0,10;5,15,10;0,15,10;-5,0,45;5,0,45;5,15,45;-5,15,45];
-patch('Faces',F,'Vertices',Pierna2,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
-
-Pierna3=[-5,0,45;5,0,45;5,15,45;-5,15,45;0,0,70;5,0,70;5,15,70;0,15,70];
-patch('Faces',F,'Vertices',Pierna3,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
+% Pierna2=[0,0,10;5,0,10;5,15,10;0,15,10;-5,0,45;5,0,45;5,15,45;-5,15,45];
+% patch('Faces',F,'Vertices',Pierna2,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
+% 
+% Pierna3=[-5,0,45;5,0,45;5,15,45;-5,15,45;0,0,70;5,0,70;5,15,70;0,15,70];
+% patch('Faces',F,'Vertices',Pierna3,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
 
 PiernaSuperior1=[0,0,70;15,0,70;15,15,70;0,15,70;-10,-5,140;15,-5,140;15,20,140;-10,20,140];
 patch('Faces',F,'Vertices',PiernaSuperior1,'FaceVertexCData',C,'FaceColor','flat');
@@ -88,23 +88,21 @@ axis equal
 % patch('Faces',F,'Vertices',DeoMenique2,'FaceVertexCData',C,'FaceColor','flat');
 % axis equal
 
-Pierna4=[5,35,10;15,35,10;15,50,10;5,50,10;5,35,70;15,35,70;15,50,70;5,50,70];
+Pierna4=[0,35,10;15,35,10;15,50,10;0,50,10;0,35,70;15,35,70;15,50,70;0,50,70];
 patch('Faces',F,'Vertices',Pierna4,'FaceVertexCData',C,'FaceColor','flat');
 axis equal
 
-Pierna5=[0,35,10;5,35,10;5,50,10;0,50,10;-5,35,45;5,35,45;5,50,45;-5,50,45];
-patch('Faces',F,'Vertices',Pierna5,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
+% Pierna5=[0,35,10;5,35,10;5,50,10;0,50,10;-5,35,45;5,35,45;5,50,45;-5,50,45];
+% patch('Faces',F,'Vertices',Pierna5,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
 
-Pierna6=[-5,35,45;5,35,45;5,50,45;-5,50,45;0,35,70;5,35,70;5,50,70;0,50,70];
-patch('Faces',F,'Vertices',Pierna6,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
+% Pierna6=[-5,35,45;5,35,45;5,50,45;-5,50,45;0,35,70;5,35,70;5,50,70;0,50,70];
+% patch('Faces',F,'Vertices',Pierna6,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
 
 PiernaSuperior3=[0,35,70;15,35,70;15,50,70;0,50,70;-10,30,140;15,30,140;15,55,140;-10,55,140];
 patch('Faces',F,'Vertices',PiernaSuperior3,'FaceVertexCData',C,'FaceColor','flat');
 axis equal
-
-
 
 torso = [-10,-5,140;15,-5,140;15,55,140;-10,55,140;-10,-10,250;15,-10,250;15,60,250;-10,60,250];
 patch('Faces', F, 'Vertices',torso,'FaceVertexCData', C, 'FaceColor','flat');
