@@ -50,13 +50,12 @@ axis image;
 %        Rtobillo = rotationMatrix(0,0,10);
 
        %prueba3
-%        Rtorso = rotationMatrix(0,0,0);
-%        Rcadera = rotationMatrix(0,0,10);
-%        Rrodilla = rotationMatrix(0,0,-27);
-%        Rtobillo = rotationMatrix(0,0,10);
+       Rtorso = rotationMatrix(10,0,0);
+       Rcadera = rotationMatrix(0,0,10);
+       Rrodilla = rotationMatrix(0,0,27);
+       Rtobillo = rotationMatrix(0,0,10);
 
-%info util
-%inclinacion rodilla 23º hombres, 27ºmujeres
+    %inclinacion rodilla 23º hombres, 27ºmujeres
 %inclinacion cadera entre 90º y 135º
 %inclinacion tobillo 90º? --> duda
 
