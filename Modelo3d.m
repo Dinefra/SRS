@@ -13,33 +13,33 @@ F=[1,2,3,4;5,6,7,8;5,6,2,1;8,7,3,4;6,7,3,2;5,8,4,1];
 C=[1,0,0;0,1,0;0,0,1;1,1,0;1,0,1;0,1,1];
 %patch('Faces',F,'Vertices',V,'FaceVertexCData',C,'FaceColor','flat');
 
-pieDTalon=[0,0,0;20,0,0;20,15,0;0,15,0;0,0,10;20,0,10;20,15,10;0,15,10];
+pieDTalon=[0,0,0;40,0,0;40,15,0;0,15,0;0,0,10;40,0,10;40,15,10;0,15,10];
 patch('Faces',F,'Vertices',pieDTalon,'FaceVertexCData',C,'FaceColor','flat');
 axis equal
 
-pieDPunta=[20,0,0;35,0,0;40,15,0;20,15,0;20,0,10;35,0,5;40,15,5;20,15,10];
-patch('Faces',F,'Vertices',pieDPunta,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
+% pieDPunta=[0,0,0;35,0,0;40,15,0;0,15,0;0,0,10;35,0,5;40,15,5;0,15,10];
+% patch('Faces',F,'Vertices',pieDPunta,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
 
-DeoGordo=[35,10,0;45,10,0;45,15,0;40,15,0;35,10,5;45,10,5;45,15,5;40,15,5];
-patch('Faces',F,'Vertices',DeoGordo,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
-
-DeoIndice=[35,7,0;43,7,0;43,10,0;35,10,0;35,7,5;43,7,5;43,10,5;35,10,5];
-patch('Faces',F,'Vertices',DeoIndice,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
-
-DeoCorazon=[35,4,0;42,4,0;42,7,0;35,7,0;35,4,5;42,4,5;42,7,5;35,7,5];
-patch('Faces',F,'Vertices',DeoCorazon,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
-
-DeoAnular=[35,2,0;41,2,0;41,4,0;35,4,0;35,2,5;41,2,5;41,4,5;35,4,5];
-patch('Faces',F,'Vertices',DeoAnular,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
-
-DeoMenique=[35,0,0;38,0,0;38,2,0;35,2,0;35,0,5;38,0,5;38,2,5;35,2,5];
-patch('Faces',F,'Vertices',DeoMenique,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
+% DeoGordo=[35,10,0;45,10,0;45,15,0;40,15,0;35,10,5;45,10,5;45,15,5;40,15,5];
+% patch('Faces',F,'Vertices',DeoGordo,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
+% 
+% DeoIndice=[35,7,0;43,7,0;43,10,0;35,10,0;35,7,5;43,7,5;43,10,5;35,10,5];
+% patch('Faces',F,'Vertices',DeoIndice,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
+% 
+% DeoCorazon=[35,4,0;42,4,0;42,7,0;35,7,0;35,4,5;42,4,5;42,7,5;35,7,5];
+% patch('Faces',F,'Vertices',DeoCorazon,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
+% 
+% DeoAnular=[35,2,0;41,2,0;41,4,0;35,4,0;35,2,5;41,2,5;41,4,5;35,4,5];
+% patch('Faces',F,'Vertices',DeoAnular,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
+% 
+% DeoMenique=[35,0,0;38,0,0;38,2,0;35,2,0;35,0,5;38,0,5;38,2,5;35,2,5];
+% patch('Faces',F,'Vertices',DeoMenique,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
 
 Pierna1=[5,0,10;15,0,10;15,15,10;5,15,10;5,0,70;15,0,70;15,15,70;5,15,70];
 patch('Faces',F,'Vertices',Pierna1,'FaceVertexCData',C,'FaceColor','flat');
@@ -60,33 +60,33 @@ axis equal
 
 
 %Pierna izquierda
-pieDTalon2=[0,35,0;20,35,0;20,50,0;0,50,0;0,35,10;20,35,10;20,50,10;0,50,10];
-patch('Faces',F,'Vertices',pieDTalon2,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
+% pieDTalon2=[0,35,0;20,35,0;20,50,0;0,50,0;0,35,10;20,35,10;20,50,10;0,50,10];
+% patch('Faces',F,'Vertices',pieDTalon2,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
 
-pieDPunta2=[20,35,0;40,35,0;35,50,0;20,50,0;20,35,10;40,35,5;35,50,5;20,50,10];
+pieDPunta2=[0,35,0;40,35,0;40,50,0;0,50,0;0,35,10;40,35,10;40,50,10;0,50,10];
 patch('Faces',F,'Vertices',pieDPunta2,'FaceVertexCData',C,'FaceColor','flat');
 axis equal
-
-DeoGordo2=[35,40,0;45,40,0;45,35,0;40,35,0;35,40,5;45,40,5;45,35,5;40,35,5];
-patch('Faces',F,'Vertices',DeoGordo2,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
-
-DeoIndice2=[35,43,0;43,43,0;43,40,0;35,40,0;35,43,5;43,43,5;43,40,5;35,40,5];
-patch('Faces',F,'Vertices',DeoIndice2,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
-
-DeoCorazon2=[35,46,0;42,46,0;42,43,0;35,43,0;35,46,5;42,46,5;42,43,5;35,43,5];
-patch('Faces',F,'Vertices',DeoCorazon2,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
-
-DeoAnular2=[35,48,0;41,48,0;41,46,0;35,46,0;35,48,5;41,48,5;41,46,5;35,46,5];
-patch('Faces',F,'Vertices',DeoAnular2,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
-
-DeoMenique2=[35,50,0;38,50,0;38,48,0;35,48,0;35,50,5;38,50,5;38,48,5;35,48,5];
-patch('Faces',F,'Vertices',DeoMenique2,'FaceVertexCData',C,'FaceColor','flat');
-axis equal
+% 
+% DeoGordo2=[35,40,0;45,40,0;45,35,0;40,35,0;35,40,5;45,40,5;45,35,5;40,35,5];
+% patch('Faces',F,'Vertices',DeoGordo2,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
+% 
+% DeoIndice2=[35,43,0;43,43,0;43,40,0;35,40,0;35,43,5;43,43,5;43,40,5;35,40,5];
+% patch('Faces',F,'Vertices',DeoIndice2,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
+% 
+% DeoCorazon2=[35,46,0;42,46,0;42,43,0;35,43,0;35,46,5;42,46,5;42,43,5;35,43,5];
+% patch('Faces',F,'Vertices',DeoCorazon2,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
+% 
+% DeoAnular2=[35,48,0;41,48,0;41,46,0;35,46,0;35,48,5;41,48,5;41,46,5;35,46,5];
+% patch('Faces',F,'Vertices',DeoAnular2,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
+% 
+% DeoMenique2=[35,50,0;38,50,0;38,48,0;35,48,0;35,50,5;38,50,5;38,48,5;35,48,5];
+% patch('Faces',F,'Vertices',DeoMenique2,'FaceVertexCData',C,'FaceColor','flat');
+% axis equal
 
 Pierna4=[5,35,10;15,35,10;15,50,10;5,50,10;5,35,70;15,35,70;15,50,70;5,50,70];
 patch('Faces',F,'Vertices',Pierna4,'FaceVertexCData',C,'FaceColor','flat');
