@@ -101,7 +101,7 @@ axis equal
 % axis equal
 
 piernaSuperiorI = [0,35,70;15,35,70;15,50,70;0,50,70;-10,30,140;15,30,140;15,55,140;-10,55,140];
-patch('Faces',F,'Vertices',PiernaSuperiorI,'FaceVertexCData',C,'FaceColor','flat');
+patch('Faces',F,'Vertices',piernaSuperiorI,'FaceVertexCData',C,'FaceColor','flat');
 axis equal
 
 torso = [-10,-5,140;15,-5,140;15,55,140;-10,55,140;-10,-10,250;15,-10,250;15,60,250;-10,60,250];
