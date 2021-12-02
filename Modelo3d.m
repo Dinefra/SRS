@@ -116,6 +116,10 @@ PiernaSuperior4=[-10,30,120;15,30,120;15,55,120;-10,55,120;-10,30,140;15,30,140;
 patch('Faces',F,'Vertices',PiernaSuperior4,'FaceVertexCData',C,'FaceColor','flat');
 axis equal
 
+torso = [-10,-5,160;15,-5,160;15,55,160;-10,55,160;-10,-10,250;15,-10,250;15,60,250;-10,60,250];
+patch('Faces', F, 'Vertices',torso,'FaceVertexCData', C, 'FaceColor','flat');
+axis equal
+
 xlabel('x');
 ylabel('y');
 zlabel('z');
