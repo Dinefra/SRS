@@ -1,6 +1,5 @@
 
-
-function cadenaCinematicaPrueba(YPRcadera, YPRrodilla, YPRtobillo) % Incluir dedos?
+function cadenaCinematicaPrueba(YPRtorso,YPRcadera,YPRrodilla,YPRtobillo)
 % Movimientos en eje [z,y,x]
 % YPRtorso = [rotacion, inclinacion der-izq,inclinacion delante-detras];
 % YPRcadera = [rotacion,abduccion-aduccion,flexoextension];
@@ -49,12 +48,6 @@ piernaInferiorRotada = applyRotationNx3(applyRotationNx3(applyRotationNx3(pierna
 pieRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(pie,...
     sum(piernaInferior(1:4,:))/4,Rtobillo),sum(piernaSuperior(1:4,:))/4,Rrodilla), ...
     (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
-
-%ejemplo borja tren superior
-%torso - torso
-%brazo - piernaSuperior
-%antebrazo - piernaInferior
-%mano - pie
 
 figure;
 patch('faces',f,'vertices',torsoRotado,'FaceVertexCData',color,'FaceColor','flat');
