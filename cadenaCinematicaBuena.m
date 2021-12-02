@@ -1,5 +1,5 @@
 
-function cadenaCinematicaPrueba(YPRtorso,YPRcadera,YPRrodilla,YPRtobillo)
+function cadenaCinematica(YPRtorso,YPRcadera,YPRrodilla,YPRtobillo)
 % Movimientos en eje [z,y,x]
 % YPRtorso = [rotacion, inclinacion der-izq,inclinacion delante-detras];
 % YPRcadera = [rotacion,abduccion-aduccion,flexoextension];
@@ -36,6 +36,11 @@ Rtorso = rotationMatrix(YPRtorso(1),YPRtorso(2),YPRtorso(3));
 Rtobillo = rotationMatrix(YPRtobillo(1),YPRtobillo(2),YPRtobillo(3));
 Rrodilla = rotationMatrix(YPRrodilla(1),YPRrodilla(2),YPRrodilla(3));
 Rcadera = rotationMatrix(YPRcadera(1),YPRcadera(2),YPRcadera(3));
+    %    prueba fallida
+    %    R_torso = rotationMatrix(0,0,30);
+    %    R_cadera = rotationMatrix(0,0,-30);
+    %    R_rodilla = rotationMatrix(0,0,60);
+    %    R_tobillo = rotationMatrix(0,0,20);
 
 % Rotacion partes
 torsoRotado = applyRotationNx3(torso,sum(torso)/8,Rtorso);
