@@ -31,36 +31,42 @@ patch('faces',f,'vertices',pie,'FaceVertexCData',color,'FaceColor','flat');
 view(3);
 axis image;
 
-% Centros de rotacion (articulaciones)
 Rtorso = rotationMatrix(YPRtorso(1),YPRtorso(2),YPRtorso(3));
 Rtobillo = rotationMatrix(YPRtobillo(1),YPRtobillo(2),YPRtobillo(3));
 Rrodilla = rotationMatrix(YPRrodilla(1),YPRrodilla(2),YPRrodilla(3));
 Rcadera = rotationMatrix(YPRcadera(1),YPRcadera(2),YPRcadera(3));
 
-% Rotacion partes
-torsoRotado = applyRotationNx3(torso,sum(torso)/8,Rtorso);
+%rotacion partes
+torsoRotado = ;
 
-piernaSuperiorRotada = applyRotationNx3(applyRotationNx3(piernaSuperior,...
-    (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+piernaSuperiorRotada = ;
 
-piernaInferiorRotada = applyRotationNx3(applyRotationNx3(applyRotationNx3(piernaInferior,...
-    sum(piernaSuperior(1:4,:))/4,Rrodilla),(torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+rodillaRotada = applyRotationNx3(applyRotationNx3(applyRotationNx3(PiernaSuperior1, ...
+    sum(Pierna1)/8,Rcadera),(Cadera(5,:)+Cadera(6,:)),Rrodilla,sum(Cadera)/8,Rcadera));
 
-pieRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(pie,...
-    sum(piernaInferior(1:4,:))/4,Rtobillo),sum(piernaSuperior(1:4,:))/4,Rrodilla), ...
-    (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+tobilloRotado =applyRotationNx3(applyRotationNx3(applyRotationNx3())) ;
+% dedosRotados = ;
 
 %ejemplo borja tren superior
-%torso - torso
-%brazo - piernaSuperior
-%antebrazo - piernaInferior
+%torso - cadera
+%antebrazo - rodilla 
+%brazo - tobillo
 %mano - pie
 
+% manoRotada = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(mano,...
+%     sum(antebrazo(1:4,:))/4,Rwrist),sum(brazo(1:4,:))/4,Rcodo),(torso(5,:)+torso(6,:))/2,Rhombro),sum(torso)/8,Rtorso);
+
+% antebrazoRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(antebrazo,...
+%     sum(brazo(1:4,:))/4,Rcodo),(torso(5,:)+torso(6,:))/2,Rhombro),sum(torso)/8,Rtorso);
+
+% brazoRotado = applyRotationNx3(applyRotationNx3(brazo,...
+%     (torso(5,:)+torso(6,:))/2,Rhombro),sum(torso)/8,Rtorso);
+
 figure;
-patch('faces',f,'vertices',torsoRotado,'FaceVertexCData',color,'FaceColor','flat');
-patch('faces',f,'vertices',piernaSuperiorRotada,'FaceVertexCData',color,'FaceColor','flat');
-patch('faces',f,'vertices',piernaInferiorRotada,'FaceVertexCData',color,'FaceColor','flat');
-patch('faces',f,'vertices',pieRotado,'FaceVertexCData',color,'FaceColor','flat');
+patch('faces',f,'vertices',tobilloRotado,'FaceVertexCData',color,'FaceColor','flat');
+patch('faces',f,'vertices',rodillaRotada,'FaceVertexCData',color,'FaceColor','flat');
+patch('faces',f,'vertices',caderaRotada,'FaceVertexCData',color,'FaceColor','flat');
+patch('faces',f,'vertices',dedosRotados,'FaceVertexCData',color,'FaceColor','flat');
 view(3);
 axis image;
 
