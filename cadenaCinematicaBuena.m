@@ -1,5 +1,5 @@
 
-function cadenaCinematica(YPRtorso,YPRcadera,YPRrodilla,YPRtobillo)
+function cadenaCinematicaBuena(YPRtorso,YPRcadera,YPRrodilla,YPRtobillo)
 % Movimientos en eje [z,y,x]
 % YPRtorso = [rotacion, inclinacion der-izq,inclinacion delante-detras];
 % YPRcadera = [rotacion,abduccion-aduccion,flexoextension];
