@@ -112,11 +112,11 @@ axis image;
 %         Rcadera = rotationMatrix(0,0,10);
 %         Rrodilla = rotationMatrix(0,0,-27);
 %         Rtobillo = rotationMatrix(0,0,10);
-
-        Rtorso = rotationMatrix(0,-10,0);
-        Rcadera = rotationMatrix(0,-10,0);
-        Rrodilla = rotationMatrix(0,10,10);
-        Rtobillo = rotationMatrix(0,10,10);
+        %zyx
+        Rtorso = rotationMatrix(0,0,0);
+        Rcadera = rotationMatrix(0,10,0);
+        Rrodilla = rotationMatrix(0,10,0);
+        Rtobillo = rotationMatrix(0,-10,0);
 
 %info util
 %inclinacion rodilla 23º hombres, 27ºmujeres
@@ -133,44 +133,44 @@ torsoRotado = applyRotationNx3(torso,sum(torso)/8,Rtorso);
 %---------------ROTACIÓN DELA PIERNA SUPERIOR-------------------------------------------
 
 piernaSuperiorRotada1 = applyRotationNx3(applyRotationNx3(piernaSuperior1,...
-    (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    (torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 piernaSuperiorRotada2 = applyRotationNx3(applyRotationNx3(piernaSuperior2,...
-    (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    (torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 
 %---------------ROTACIÓN DE LA PIERNA INFERIOR----------------------------------------
 
 piernaInferiorRotada1 = applyRotationNx3(applyRotationNx3(applyRotationNx3(Pierna1,...
-    sum(piernaSuperior1(1:4,:))/4,Rrodilla),(torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    sum(piernaSuperior1(1:4,:))/4,Rrodilla),(torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 
 piernaInferiorRotada2 = applyRotationNx3(applyRotationNx3(applyRotationNx3(Pierna2,...
-    sum(piernaSuperior1(1:4,:))/4,Rrodilla),(torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    sum(piernaSuperior1(1:4,:))/4,Rrodilla),(torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 
 piernaInferiorRotada3 = applyRotationNx3(applyRotationNx3(applyRotationNx3(Pierna3,...
-    sum(piernaSuperior1(1:4,:))/4,Rrodilla),(torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    sum(piernaSuperior1(1:4,:))/4,Rrodilla),(torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 
 %---------------ROTACIÓN DEL PIE-------------------------------------------
 
 pieTalonRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(pieDTalon,...
     sum(Pierna1(1:4,:))/4,Rtobillo),sum(piernaSuperior1(1:4,:))/4,Rrodilla), ...
-    (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    (torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 piePuntaRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(pieDPunta,...
     sum(Pierna1(1:4,:))/4,Rtobillo),sum(piernaSuperior1(1:4,:))/4,Rrodilla), ...
-    (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    (torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 dedoPulgarRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(dedoGordo,...
     sum(Pierna1(1:4,:))/4,Rtobillo),sum(piernaSuperior1(1:4,:))/4,Rrodilla), ...
-    (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    (torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 dedoIndiceRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(dedoIndice,...
     sum(Pierna1(1:4,:))/4,Rtobillo),sum(piernaSuperior1(1:4,:))/4,Rrodilla), ...
-    (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    (torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 dedoCorazonRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(dedoCorazon,...
     sum(Pierna1(1:4,:))/4,Rtobillo),sum(piernaSuperior1(1:4,:))/4,Rrodilla), ...
-    (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    (torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 dedoAnularRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(dedoAnular,...
     sum(Pierna1(1:4,:))/4,Rtobillo),sum(piernaSuperior1(1:4,:))/4,Rrodilla), ...
-    (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    (torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 dedoMeniqueRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(dedoMenique,...
     sum(Pierna1(1:4,:))/4,Rtobillo),sum(piernaSuperior1(1:4,:))/4,Rrodilla), ...
-    (torso(5,:)+torso(6,:))/2,Rcadera),sum(torso)/8,Rtorso);
+    (torso(1,:)+torso(4,:))/2,Rcadera),sum(torso)/8,Rtorso);
 
 figure;
 %Tronco rotado
