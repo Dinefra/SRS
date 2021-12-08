@@ -54,18 +54,10 @@ piernaSuperior1=[0,0,70;15,0,70;15,15,70;0,15,70;-10,-5,120;15,-5,120;15,20,120;
 
 piernaSuperior2=[-10,-5,120;15,-5,120;15,20,120;-10,20,120;-10,-5,140;15,-5,140;15,20,140;-10,20,140];
 
-
-
-
 % Definicion de partes del cuerpo (lado izquierdo)
 torso1 = [-10,-5,140;15,-5,140;15,55,140;-10,55,140;-10,-10,250;15,-10,250;15,60,250;-10,60,250];
 torso= [-10,-5,140;2,-5,140;2,55,140;-10,55,140;-10,-5,150;2,-5,150;2,55,150;-10,55,150];
 
-%piernaSuperior = [0,35,70;15,35,70;15,50,70;0,50,70;-10,30,140;15,30,140;15,55,140;-10,55,140];
-%piernaInferior = [0,35,10;15,35,10;15,50,10;0,50,10;0,35,70;15,35,70;15,50,70;0,50,70];
-%pie = [0,35,0;40,35,0;40,50,0;0,50,0;0,35,10;40,35,10;40,50,10;0,50,10];
-
-figure;
 patch('faces',f,'vertices',torso,'FaceVertexCData',color,'FaceColor','flat');
 patch('faces',f,'vertices',torso1,'FaceVertexCData',color,'FaceColor','flat');
 
@@ -100,35 +92,10 @@ axis image;
 % Rrodilla = rotationMatrix(YPRrodilla(1),YPRrodilla(2),YPRrodilla(3));
 % Rcadera = rotationMatrix(YPRcadera(1),YPRcadera(2),YPRcadera(3));
 
-    %    prueba fallida
-    %    R_torso = rotationMatrix(0,0,30);
-    %    R_cadera = rotationMatrix(0,0,-30);
-    %    R_rodilla = rotationMatrix(0,0,60);
-    %    R_tobillo = rotationMatrix(0,0,20);
-
-        %prueba 2
-%        Rtorso = rotationMatrix(0,0,10);
-%        Rcadera = rotationMatrix(0,0,10);
-%        Rrodilla = rotationMatrix(0,0,27);
-%        Rtobillo = rotationMatrix(0,0,10);
-
-       %prueba3
-%        Rtorso = rotationMatrix(0,0,0);
-%         Rcadera = rotationMatrix(0,0,10);
-%         Rrodilla = rotationMatrix(0,0,-27);
-%         Rtobillo = rotationMatrix(0,0,10);
-
-        Rtorso = rotationMatrix(0,10,0);
-        Rcadera = rotationMatrix(0,-30,0);
-        Rrodilla = rotationMatrix(0,20,0);
-        Rtobillo = rotationMatrix(0,-10,0);
-
-%info util
-%inclinacion rodilla 23º hombres, 27ºmujeres
-%inclinacion cadera entre 90º y 135º
-%inclinacion tobillo 90º? --> duda
-
-
+        Rtorso = rotationMatrix(0,0,0);
+        Rcadera = rotationMatrix(0,0,0);
+        Rrodilla = rotationMatrix(0,0,0);
+        Rtobillo = rotationMatrix(0,0,0);
 
 % Rotacion partes
 %---------------ROTACIÓN DEL TORSO-------------------------------------------
