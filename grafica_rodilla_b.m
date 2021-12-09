@@ -37,7 +37,7 @@ pp = makima(xH2,yH);
 % Evaluacion del polinomio
 m = ppval(pp,xR*duration);
 % Introduccion de ruido sobre la curva de movimiento obtenida
-m = m + 3*rand(1,2001);
+m = m + 1.5*rand(1,2001);
 
 % Representacion de la curva de movimiento
 plot(xR*duration,m);
