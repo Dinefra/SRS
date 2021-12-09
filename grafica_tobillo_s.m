@@ -11,6 +11,16 @@ xH = xH + 0.5*rand(1,21);
 xH(1) = 0;
 xH(end) = 100;
 
+% Periodo entre muestras
+T = (xH(end)-xH(1))/length(xH); 
+
+% Valor aleatorio T al que se le resta la mitad del propio periodo para que 
+% cuando se muevan dos muestras consecutivas, no se superpongan entre sí
+rxT = T.*rand(1,1) - (T/2); 
+
+% Nuevo eje x con periodo de muestreo aleatorio
+xH = xH + rxT;
+
 % Componente X de evaluacion - ?? ISA MIRAR VIDEO
 xR = 0:0.05:100;  
 
