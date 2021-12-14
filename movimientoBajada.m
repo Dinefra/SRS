@@ -61,19 +61,20 @@ y_ts = [-20,-10,5,7,10,12,13,15,19,22,24,20,10,2,1,-2,-10,-15,-20,-26,-20];
 % Angulos de tobillo en bajada
 y_tb = [11,10,13,14,11,8,7,6,7,9,10,14,19,25,29,31,29,25,20,15,11];
 
-
+fm =10;
 % Movimiento progresivo de bajada
 for ii = 1:size(y_cb,2)
-    Rtorso = rotationMatrix(0,0,90);
-
+    Rtorso = rotationMatrix(0,0,0);
+cla
+tic
     torsoRotado = applyRotationNx3(torso,sum(torso)/8,Rtorso);
     torsoRotado1 = applyRotationNx3(torso1,sum(torso)/8,Rtorso);
 
-    figure;
+ 
     patch('faces',f,'vertices',torsoRotado,'FaceVertexCData',color,'FaceColor','flat');
     patch('faces',f,'vertices',torsoRotado1,'FaceVertexCData',color,'FaceColor','flat');
 
-    Rcadera = rotationMatrix(0,y_cb(ii),90);
+    Rcadera = rotationMatrix(0,y_cb(ii),0);
 
     piernaSuperiorRotada1 = applyRotationNx3(applyRotationNx3(piernaSuperior1,...
         (torso(2,:)+torso(3,:))/2,Rcadera),sum(torso)/8,Rtorso);
@@ -83,8 +84,8 @@ for ii = 1:size(y_cb,2)
     patch('faces',f,'vertices',piernaSuperiorRotada1,'FaceVertexCData',color,'FaceColor','flat');
     patch('faces',f,'vertices',piernaSuperiorRotada2,'FaceVertexCData',color,'FaceColor','flat');
 
-        for jj = 1:size(y_rb,2)
-            Rrodilla = rotationMatrix(0,y_rb(jj),90);
+%         for jj = 1:size(y_rb,2)
+            Rrodilla = rotationMatrix(0,y_rb(ii),0);
             
             piernaInferiorRotada1 = applyRotationNx3(applyRotationNx3(applyRotationNx3(Pierna1,...
                 sum(piernaSuperior1(1:4,:))/4,Rrodilla),(torso(2,:)+torso(3,:))/2,Rcadera),sum(torso)/8,Rtorso);
@@ -97,8 +98,8 @@ for ii = 1:size(y_cb,2)
             patch('faces',f,'vertices',piernaInferiorRotada2,'FaceVertexCData',color,'FaceColor','flat');
             patch('faces',f,'vertices',piernaInferiorRotada3,'FaceVertexCData',color,'FaceColor','flat');
                
-                for kk = 1:size(y_tb,2)
-                    Rtobillo = rotationMatrix(0,y_tb(kk),90);
+%                 for kk = 1:size(y_tb,2)
+                    Rtobillo = rotationMatrix(0,y_tb(ii),0);
 
                     pieTalonRotado = applyRotationNx3(applyRotationNx3(applyRotationNx3(applyRotationNx3(pieDTalon,...
                         sum(Pierna1(1:4,:))/4,Rtobillo),sum(piernaSuperior1(1:4,:))/4,Rrodilla), ...
@@ -131,9 +132,8 @@ for ii = 1:size(y_cb,2)
                     patch('faces',f,'vertices',dedoMeniqueRotado,'FaceVertexCData',color,'FaceColor','flat');
                     view(3);
                     axis image;
+                    tiempo = toc;
+                pause(1/fm-tiempo);
+                    drawnow;
                 end
-        end
-end
-cla reset
-
-end
+    
