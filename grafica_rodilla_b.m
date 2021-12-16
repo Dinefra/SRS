@@ -57,37 +57,37 @@ grafica_ruidosa = grafica_ruidosa(2003:end);
 % [bb,ab] = butter(6,0.5);
 [bb,ab] = butter(2,0.5);
 % [bb,ab] = butter(12,0.5);
-grafica_filtadaB = filtfilt(bb,ab,grafica_ruidosa);
+grafica_filtradaB = filtfilt(bb,ab,grafica_ruidosa);
 
 % Cheby1
 % [bc1,ac1] = cheby1(6,5,0.5); % 5 son los decibelos en la banda de rizado
 [bc1,ac1] = cheby1(2,5,0.5); 
 % [bc1,ac1] = cheby1(12,5,0.5); 
-grafica_filtadaC1 = filtfilt(bc1,ac1,grafica_ruidosa);
+grafica_filtradaC1 = filtfilt(bc1,ac1,grafica_ruidosa);
 
 % Cheby2
 % [bc2,ac2] = cheby2(6,80,0.5); % 80 son los decibelos en la banda de rechazo
 [bc2,ac2] = cheby2(2,80,0.5); 
 % [bc2,ac2] = cheby2(12,80,0.5); 
-grafica_filtadaC2 = filtfilt(bc2,ac2,grafica_ruidosa); 
+grafica_filtradaC2 = filtfilt(bc2,ac2,grafica_ruidosa); 
 
 % Eliptico
 % [be,ae] = ellip(6,5,80,0.5);
 [be,ae] = ellip(2,5,80,0.5);
 % [be,ae] = ellip(12,5,80,0.5);
-grafica_filtadaE = filtfilt(be,ae,grafica_ruidosa); 
+grafica_filtradaE = filtfilt(be,ae,grafica_ruidosa); 
 
 % figure('Name','Filtrado orden 2'); 
 % subplot(5,1,1), plot(grafica_ruidosa),
-% subplot(5,1,2), plot(grafica_filtadaB),
-% subplot(5,1,3), plot(grafica_filtadaC1),
-% subplot(5,1,4), plot(grafica_filtadaC2),
-% subplot(5,1,5), plot(grafica_filtadaE);
+% subplot(5,1,2), plot(grafica_filtradaB),
+% subplot(5,1,3), plot(grafica_filtradaC1),
+% subplot(5,1,4), plot(grafica_filtradaC2),
+% subplot(5,1,5), plot(grafica_filtradaE);
 
 figure;
 subplot(2,1,1), plot(grafica_ruidosa), title('Gráfica con ruido'), 
 xlabel('Tiempo de movimiento (ms)'), ylabel('Ángulo de la rodilla (º)');
-subplot(2,1,2), plot(grafica_filtadaC2), title('Gráfica filtrada'),
+subplot(2,1,2), plot(grafica_filtradaC2), title('Gráfica filtrada'),
 xlabel('Tiempo de movimiento (ms)'), ylabel('Ángulo de la rodilla (º)');
 
 % Representacion de la curva de movimiento
