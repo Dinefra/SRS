@@ -1,9 +1,0 @@
-function grafica_filtadaB = aplicarFiltroButter(grafica,orden,frecuencia)
-
-% mostrar a partir de la muestra 2003 hasta el final
-grafica= grafica(2003:end);
-
-[bb,ab] = butter(orden,frecuencia); %meter info del filtro aquí 
-grafica_filtadaB = filtfilt(bb,ab,grafica_ruidosa);
-end 
-
