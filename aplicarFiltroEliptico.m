@@ -8,12 +8,11 @@ grafica = grafica(2003:end);
 [be,ae] = ellip(orden,5,80,frecuencia); 
 grafica_filtradaEliptico = filtfilt(be,ae,grafica);
 
-% Visualizacion de la grafica pasada por parámetro filtrada
-figure, plot(grafica), 
-xlabel('Tiempo de movimiento (ms)'), ylabel('Ángulo de la articulación (º)');
+% Visualización de la gráfica pasada por parámetro filtrada
+% figure, plot(grafica_filtradaEliptico), 
+% xlabel('Tiempo de movimiento (ms)'), ylabel('Ángulo de la articulación (º)');
 
-% Descomentar las líneas inferiores si se desea observar la gráfica
-% ruidosa y filtrada
+% Visualización de la gráfica ruidosa y filtrada
 % figure;
 % subplot(2,1,1), plot(grafica), title('Gráfica con ruido'), 
 % xlabel('Tiempo de movimiento (ms)'), ylabel('Ángulo de la articulación (º)');
