@@ -34,7 +34,8 @@ function grs = grafica_rodilla_s()
     yH = yH + 5*rand(1,21);
     
     % Definicion del minimo y maximo del movimiento - DUDA: PREGUNTAR AL PROFE En segundos??
-    minim = 0.88;
+    %minim = 0.88;
+    minim = 0.96;
     maxim = 1.5;
     
     % Duracion aleatoria del movimiento

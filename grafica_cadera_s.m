@@ -34,7 +34,8 @@ function gcs = grafica_cadera_s()
     yH = yH + 5*rand(1,21);
     
     % Definicion del minimo y maximo del movimiento
-    minim = 0.88;
+    %minim = 0.88;
+    minim = 0.96;
     maxim = 1.5;
     
     % Duracion aleatoria del movimiento
