@@ -1,0 +1,6 @@
+Tiempo máximo: 1.5 s
+Tiempo mínimo: 0.96 s
+Ángulo máximo cadera subida: 13.8415
+Ángulo máximo cadera bajada: 53.71
+Ángulo mínimo cadera subida: -15.6908
+Ángulo mínimo cadera bajada: -3.9643
