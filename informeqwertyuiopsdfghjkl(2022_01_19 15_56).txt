@@ -1,0 +1,26 @@
+
+Fecha de creación de fichero: 2022/01/19 15:56
+
+Nombre: qwertyuiop
+Apellidos: sdfghjkl
+Edad: 90 años
+Peso: 9 kg
+
+Tiempo máximo: 1.5 s
+Tiempo mínimo: 0.96 s
+
+Ángulo máximo cadera subida: 15.6484º
+Ángulo máximo cadera bajada: 53.1872º
+Ángulo mínimo cadera subida: -12.9833º
+Ángulo mínimo cadera bajada: -1.8787º
+
+Ángulo máximo rodilla subida: 96.8903º
+Ángulo máximo rodilla bajada: 99.4755º
+Ángulo mínimo rodilla subida: 8.0081º
+Ángulo mínimo rodilla bajada: 10.0125º
+
+Ángulo máximo tobillo subida: 25.539º
+Ángulo máximo tobillo bajada: 32.9678º
+Ángulo mínimo tobillo subida: -21.0651º
+Ángulo mínimo tobillo bajada: 8.7598º
+
