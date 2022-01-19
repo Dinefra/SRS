@@ -1,0 +1,20 @@
+
+Fecha de creación de fichero: 2022/01/19 15:17
+Nombre: virginia
+Apellidos: lopez
+Edad: 20 años
+Peso: 40 kg
+Tiempo máximo: 1.5 s
+Tiempo mínimo: 0.96 s
+Ángulo máximo cadera subida: 16.164º
+Ángulo máximo cadera bajada: 52.9435º
+Ángulo mínimo cadera subida: -15.8975º
+Ángulo mínimo cadera bajada: -2.7895º
+Ángulo máximo rodilla subida: 95.7º
+Ángulo máximo rodilla bajada: 98.1798º
+Ángulo mínimo rodilla subida: 9.1099º
+Ángulo mínimo rodilla bajada: 9.6793º
+Ángulo máximo tobillo subida: 28.4537º
+Ángulo máximo tobillo bajada: 36.1135º
+Ángulo mínimo tobillo subida: -21.8723º
+Ángulo mínimo tobillo bajada: 10.3534º
