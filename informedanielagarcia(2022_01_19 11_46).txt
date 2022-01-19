@@ -1,0 +1,26 @@
+
+Fecha de creación de fichero: 2022/01/19 11:46
+
+Nombre: daniela
+Apellidos: garcia
+Edad: 20
+Peso: 2
+
+Tiempo máximo: 1.5 s
+Tiempo mínimo: 0.96 s
+
+Ángulo máximo cadera subida: 15.1487º
+Ángulo máximo cadera bajada: 51.4872º
+Ángulo mínimo cadera subida: -13.4183º
+Ángulo mínimo cadera bajada: -2.5896º
+
+Ángulo máximo rodilla subida: 98.0362º
+Ángulo máximo rodilla bajada: 96.6818º
+Ángulo mínimo rodilla subida: 10.0367º
+Ángulo mínimo rodilla bajada: 8.9392º
+
+Ángulo máximo tobillo subida: 27.7132º
+Ángulo máximo tobillo bajada: 33.3991º
+Ángulo mínimo tobillo subida: -23.1621º
+Ángulo mínimo tobillo bajada: 7.8127º
+

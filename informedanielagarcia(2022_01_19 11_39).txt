@@ -1,0 +1,21 @@
+
+Fecha de creación de fichero: 2022/01/19 11:39
+
+Tiempo máximo: 1.5 s
+Tiempo mínimo: 0.96 s
+
+Ángulo máximo cadera subida: 17.3113 º
+Ángulo máximo cadera bajada: 51.6144 º
+Ángulo mínimo cadera subida: -14.697 º
+Ángulo mínimo cadera bajada: -2.1624 º
+
+Ángulo máximo rodilla subida: 97.7184 º
+Ángulo máximo rodilla bajada: 98.4671 º
+Ángulo mínimo rodilla subida: 10.0738 º
+Ángulo mínimo rodilla bajada: 8.5806 º
+
+Ángulo máximo tobillo subida: 25.9923 º
+Ángulo máximo tobillo bajada: 35.0485 º
+Ángulo mínimo tobillo subida: -19.5991 º
+Ángulo mínimo tobillo bajada: 8.668 º
+

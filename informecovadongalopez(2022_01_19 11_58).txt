@@ -1,0 +1,26 @@
+
+Fecha de creación de fichero: 2022/01/19 11:58
+
+Nombre: covadonga
+Apellidos: lopez
+Edad: 20
+Peso: 20
+
+Tiempo máximo: 1.5 s
+Tiempo mínimo: 0.96 s
+
+Ángulo máximo cadera subida: 14.7348º
+Ángulo máximo cadera bajada: 49.9864º
+Ángulo mínimo cadera subida: -13.2663º
+Ángulo mínimo cadera bajada: -4.5662º
+
+Ángulo máximo rodilla subida: 96.7012º
+Ángulo máximo rodilla bajada: 97.25º
+Ángulo mínimo rodilla subida: 7.8623º
+Ángulo mínimo rodilla bajada: 9.3748º
+
+Ángulo máximo tobillo subida: 27.5085º
+Ángulo máximo tobillo bajada: 34.7195º
+Ángulo mínimo tobillo subida: -23.761º
+Ángulo mínimo tobillo bajada: 9.8064º
+
