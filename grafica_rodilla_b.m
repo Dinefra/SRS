@@ -4,34 +4,34 @@ function grb = grafica_rodilla_b()
     % Eje X de puntos originales
     xH = 0:5:100;
     
-    % Distribucion original con variable aleatoria
-    xH = xH + 0.5*rand(1,21);
+    % Distribucion original con variable aleatoria para desplazamiento de
+    % +-5% de picos y valles
+    xHvar = xH + 0.1*rand(1,length(xH))-0.05;
     
     % Para asegurarnos de que la componente X va de 0 a 100 a pesar de la 
     % variable aleatoria
-    xH(1) = 0;
-    xH(end) = 100;
+    xHvar(1) = 0;
+    xHvar(end) = 100;
     
     % Periodo entre muestras
-    T = (xH(end)-xH(1))/length(xH); 
+    T = (xHvar(end)-xHvar(1))/length(xHvar); 
     
     % Valor aleatorio T al que se le resta la mitad del propio periodo para que 
     % cuando se muevan dos muestras consecutivas, no se superpongan entre sí
     rxT = T.*rand(1,1) - (T/2); 
     
     % Nuevo eje x con periodo de muestreo aleatorio
-    xH = xH + rxT;
+    xHvar = xHvar + rxT;
     
-    % Componente X de evaluacion - ?? ISA MIRAR VIDEO
+    % Componente X de evaluacion
     xR = 0:0.05:100; 
     
     % Componente Y de puntos originales
     % Se termina en el mismo punto en el que se empieza
     yH = [60,58,56,53,45,35,26,22,12,8,7,7,10,23,45,65,85,94,90,75,60];
     
-    % Para crear un vector de valores aleatorios entre 1 y 21 multiplicado por 
-    % 5 que se suman a los valores originales de la componente Y
-    yH = yH + 5*rand(1,21);
+    % Distribucion original y con variable aleatoria del 5%
+    yHvar = yH + 0.05*rand(1,length(yH));
     
     % Definicion del minimo y maximo del movimiento 
     minim = 0.96;
@@ -41,14 +41,18 @@ function grb = grafica_rodilla_b()
     duration = minim + (maxim-minim)*rand(1);
     
     % Ajuste del eje X a la duracion del movimiento
-    xH2 = xH*duration;
+    xH2 = xHvar*duration;
     
     % Interpolacion Akima
-    pp = makima(xH2,yH);
+    pp = makima(xH2,yHvar);
     % Evaluacion del polinomio
     m = ppval(pp,xR*duration);
-    % Introduccion de ruido sobre la curva de movimiento obtenida
-    m = m + 1.5*rand(1,2001);
+
+    % Rango de la señal 
+    rango = max(m)-min(m);
+    % Introduccion de un +-10% de ruido sobre la curva de movimiento obtenida
+    ruido = 0.2*rango*rand(1,length(m))-0.1;
+    m = m + ruido;
     
     % Representacion de la curva de movimiento sin utilizar filtros
     grb = [xR*duration,m];
