@@ -28,7 +28,7 @@ function gtb = grafica_tobillo_b()
     
     % Componente Y de puntos originales
     % Se termina en el mismo punto en el que se empieza
-    yH = [11,10,13,14,11,8,7,6,7,9,10,14,19,25,29,31,29,25,20,15,11]; % CAMBIAR
+    yH = [11,10,13,14,11,8,7,6,7,9,10,14,19,25,29,31,29,25,20,15,11];
     
     % Distribucion original y con variable aleatoria del 5%
     yHvar = yH + 0.05*rand(1,length(yH));
