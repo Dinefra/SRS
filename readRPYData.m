@@ -17,9 +17,10 @@ src.UserData.Count = src.UserData.Count + 1;
 
 % Si el contador llega a 1001 datos recogidos de Arduino, apaga los
 % callbacks y muestra los datos
-if src.UserData.Count > 1001
+%if src.UserData.Count > 1001
+if src.UserData.Count > 10
     configureCallback(src, "off");
-    plot(src.UserData.Data(2:end));
+    plot(src.UserData.Data(2:end),'g');
 end
 
 end
