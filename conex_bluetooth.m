@@ -9,7 +9,8 @@ device = bluetooth("ESP32Test", 1);
 % de la placa especificada conectada por Bluetooth al canal indicado.
 
 writeline(device,"hello"); 
-% Para escribir en el dispositivo lo especificado en Arduino IDE
+% Para escribir lo especificado en Arduino IDE
 
 readline(device);
-% Para leer lo especificado en Arduino IDE
+% Para leer lo especificado en Arduino IDE, es decir, datos recogidos por
+% los sensores
