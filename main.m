@@ -1,4 +1,37 @@
-%% Gráficas 
+%% Gráficas ideales 
+% Tobillo subida
+ts_ideal = grafica_tobillo_s_ideal();
+% Rodilla subida
+rs_ideal = grafica_rodilla_s_ideal();
+% Cadera subida
+cs_ideal = grafica_cadera_s_ideal();
+
+% plot(ts_ideal,'b');
+% hold on;
+% plot(rs_ideal,'g');
+% hold on;
+% plot(cs_ideal,'r');
+
+% graficas_subida_conjuntas = plot(ts_ideal,'b'), hold on, plot(rs_ideal,'g'),
+%                             hold on, plot(cs_ideal,'r');
+
+% Tobillo bajada
+tb_ideal = grafica_tobillo_b_ideal();
+% Rodilla bajada
+rb_ideal = grafica_rodilla_b_ideal();
+% Cadera bajada
+cb_ideal = grafica_cadera_b_ideal();
+
+% plot(tb_ideal,'b');
+% hold on;
+% plot(rb_ideal,'g');
+% hold on;
+% plot(cb_ideal,'r');
+
+% graficas_bajada_conjuntas = plot(tb_ideal,'b'), hold on, plot(rb_ideal,'g'),
+%                             hold on, plot(cb_ideal,'r');
+
+%% Gráficas paciente
 % Tobillo subida
 ts = aplicarFiltroCheby2(grafica_tobillo_s(),2,0.5);
 % Rodilla subida
@@ -14,10 +47,9 @@ rb = aplicarFiltroCheby2(grafica_rodilla_b(),2,0.5);
 cb = aplicarFiltroCheby2(grafica_cadera_b(),2,0.5);
 
 
-%Avatar
-
+%% Avatar
 f = [1,2,3,4; 5,6,7,8; 5,6,2,1; 8,7,3,4; 6,7,3,2; 5,8,4,1];
- color = [1,0,0; 0,1,0; 0,0,1; 1,1,0; 1,0,1; 0,1,1];
+color = [1,0,0; 0,1,0; 0,0,1; 1,1,0; 1,0,1; 0,1,1];
 
 %--------------------------------------------------------------------------
 %PIE
@@ -29,13 +61,13 @@ dedoCorazon=[35,4,0;42,4,0;42,7,0;35,7,0;35,4,5;42,4,5;42,7,5;35,7,5];
 dedoAnular=[35,2,0;41,2,0;41,4,0;35,4,0;35,2,5;41,2,5;41,4,5;35,4,5];
 dedoMenique=[35,0,0;38,0,0;38,2,0;35,2,0;35,0,5;38,0,5;38,2,5;35,2,5];
 
-%-----------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 %PIERNA INFERIOR
 Pierna1=[5,0,10;15,0,10;15,15,10;5,15,10;5,0,70;15,0,70;15,15,70;5,15,70];
 Pierna2=[0,0,10;5,0,10;5,15,10;0,15,10;-5,0,45;5,0,45;5,15,45;-5,15,45];
 Pierna3=[-5,0,45;5,0,45;5,15,45;-5,15,45;0,0,70;5,0,70;5,15,70;0,15,70];
 
-%-----------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 %PIERNA SUPERIOR
 piernaSuperior1=[0,0,70;15,0,70;15,15,70;0,15,70;-10,-5,120;15,-5,120;15,20,120;-10,20,120];
 piernaSuperior2=[-10,-5,120;15,-5,120;15,20,120;-10,20,120;-10,-5,140;15,-5,140;15,20,140;-10,20,140];
