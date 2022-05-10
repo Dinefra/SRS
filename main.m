@@ -6,30 +6,12 @@ rs_ideal = grafica_rodilla_s_ideal();
 % Cadera subida
 cs_ideal = grafica_cadera_s_ideal();
 
-% plot(ts_ideal,'b');
-% hold on;
-% plot(rs_ideal,'g');
-% hold on;
-% plot(cs_ideal,'r');
-
-% graficas_subida_conjuntas = plot(ts_ideal,'b'), hold on, plot(rs_ideal,'g'),
-%                             hold on, plot(cs_ideal,'r');
-
 % Tobillo bajada
 tb_ideal = grafica_tobillo_b_ideal();
 % Rodilla bajada
 rb_ideal = grafica_rodilla_b_ideal();
 % Cadera bajada
 cb_ideal = grafica_cadera_b_ideal();
-
-% plot(tb_ideal,'b');
-% hold on;
-% plot(rb_ideal,'g');
-% hold on;
-% plot(cb_ideal,'r');
-
-% graficas_bajada_conjuntas = plot(tb_ideal,'b'), hold on, plot(rb_ideal,'g'),
-%                             hold on, plot(cb_ideal,'r');
 
 %% Gráficas paciente
 % Tobillo subida
