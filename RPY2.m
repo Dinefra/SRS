@@ -20,11 +20,15 @@ while(i<2000)
     i=i+1;
 end
 
-plot(arduinoObj.UserData.Data(:,1),'g') % Sensor1
-%hold on;
-figure(2);
-plot(arduinoObj.UserData.Data(:,2),'r') % Sensor2
-%hold on;
-figure(3);
-plot(arduinoObj.UserData.Data(:,3),'b') % Sensor2
-%hold on;
+sensor_cadera = arduinoObj.UserData.Data(:,1);
+sensor_rodilla = arduinoObj.UserData.Data(:,2);
+sensor_tobillo = arduinoObj.UserData.Data(:,3);
+
+% plot(arduinoObj.UserData.Data(:,1),'r') % Sensor1 - Cadera
+% %hold on;
+% figure(2);
+% plot(arduinoObj.UserData.Data(:,2),'g') % Sensor2 - Rodilla
+% %hold on;
+% figure(3);
+% plot(arduinoObj.UserData.Data(:,3),'b') % Sensor3 - Tobillo
+% %hold on;
