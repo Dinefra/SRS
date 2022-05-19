@@ -10,11 +10,14 @@ Tiempo máximo: 1.5s
 Tiempo mínimo: 0.96s
 Rango de tiempo ideal: x - y 
 
-Resultados                                  índice de normalidad 
-Ángulo máximo cadera subida: 14.8819º      
+Resultados
+Ángulo máximo cadera subida: 14.8819º
+Desviación normal : 2.12
+      
 Ángulo máximo cadera bajada: 54.0603º
 Ángulo mínimo cadera subida: -15.1313º
 Ángulo mínimo cadera bajada: -0.54462º
+
 
 Ángulo máximo rodilla subida: 101.6583º
 Ángulo máximo rodilla bajada: 102.455º
