@@ -1,4 +1,4 @@
-arduinoObj = serialport("COM3",115200); 
+arduinoObj = serialport("COM4",115200); 
 configureTerminator(arduinoObj,"CR/LF");
 % Crea un struct donde se almacenan los datos del usuario y los va contando
 arduinoObj.UserData = struct("Data",[],"Count",1);
@@ -15,7 +15,7 @@ readline(arduinoObj);
 arduinoObj.UserData.Data = [];
 i=1;
 fprintf('Inicio de medición');
-while(i<2000)
+while(i<200)
     readRPYData(arduinoObj);
     i=i+1;
 end

@@ -21,16 +21,16 @@ src.UserData.Count = src.UserData.Count + 1;
 
 % Si el contador llega a 1001 datos recogidos de Arduino, apaga los
 % callbacks y muestra los datos
-%if src.UserData.Count > 2001
-if src.UserData.Count < 2001
+%if src.UserData.Count > 201
+if src.UserData.Count < 201
     configureCallback(src, "off");
     %plot(src.UserData.Data(2:end),'g');
-    figure(1);
-    plot(src.UserData.Data(:,1),'g');
-    figure(2);
-    plot(src.UserData.Data(:,2),'r');
-    figure(3);
-    plot(src.UserData.Data(:,3),'b');
+%     figure(1);
+%     plot(src.UserData.Data(:,1),'g');
+%     figure(2);
+%     plot(src.UserData.Data(:,2),'r');
+%     figure(3);
+%     plot(src.UserData.Data(:,3),'b');
 end
 
 end
