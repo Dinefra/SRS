@@ -1,0 +1,26 @@
+
+Fecha de creación de fichero: 2022/05/23 11:37
+
+Nombre: isa
+Apellidos: q
+Edad: 30 años
+Peso: 30 kg
+
+Tiempo realizado: 1s
+Tiempo ideal: 1.23s
+
+Ángulo máximo cadera subida: 14.6182º
+Ángulo máximo cadera bajada: 53.6157º
+Ángulo mínimo cadera subida: -15.1242º
+Ángulo mínimo cadera bajada: -0.60666º
+
+Ángulo máximo rodilla subida: 101.011º
+Ángulo máximo rodilla bajada: 102.4226º
+Ángulo mínimo rodilla subida: 10.3382º
+Ángulo mínimo rodilla bajada: 15.2433º
+
+Ángulo máximo tobillo subida: 28.7401º
+Ángulo máximo tobillo bajada: 33.3368º
+Ángulo mínimo tobillo subida: -20.317º
+Ángulo mínimo tobillo bajada: 8.4772º
+
