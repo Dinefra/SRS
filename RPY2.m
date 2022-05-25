@@ -24,11 +24,11 @@ sensor_cadera = arduinoObj.UserData.Data(:,1);
 sensor_rodilla = arduinoObj.UserData.Data(:,2);
 sensor_tobillo = arduinoObj.UserData.Data(:,3);
 
-% plot(arduinoObj.UserData.Data(:,1),'r') % Sensor1 - Cadera
-% %hold on;
+% plot(sensor_cadera,'r') % Sensor1 - Cadera
+% % hold on;
 % figure(2);
-% plot(arduinoObj.UserData.Data(:,2),'g') % Sensor2 - Rodilla
-% %hold on;
+% plot(sensor_rodilla,'g') % Sensor2 - Rodilla
+% % hold on;
 % figure(3);
-% plot(arduinoObj.UserData.Data(:,3),'b') % Sensor3 - Tobillo
-% %hold on;
+% plot(sensor_tobillo,'b') % Sensor3 - Tobillo
+% % hold on;

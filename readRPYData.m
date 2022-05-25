@@ -24,11 +24,11 @@ src.UserData.Count = src.UserData.Count + 1;
 %if src.UserData.Count > 201
 if src.UserData.Count < 201
     configureCallback(src, "off");
-    %plot(src.UserData.Data(2:end),'g');
+% %     plot(src.UserData.Data(2:end),'g');
 %     figure(1);
-%     plot(src.UserData.Data(:,1),'g');
+%     plot(src.UserData.Data(:,1),'r');
 %     figure(2);
-%     plot(src.UserData.Data(:,2),'r');
+%     plot(src.UserData.Data(:,2),'g');
 %     figure(3);
 %     plot(src.UserData.Data(:,3),'b');
 end

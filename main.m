@@ -13,6 +13,11 @@ rb_ideal = grafica_rodilla_b_ideal();
 % Cadera bajada
 cb_ideal = grafica_cadera_b_ideal();
 
+% sensor_cadera_app = RPY2(sensor_cadera);
+% sensor_rodilla_app = RPY2(sensor_rodilla);
+% sensor_tobillo_app = RPY2(sensor_tobillo);
+
+
 %% Gráficas paciente
 % Tobillo subida
 ts = aplicarFiltroCheby2(grafica_tobillo_s(),2,0.5);
