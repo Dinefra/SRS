@@ -2,14 +2,14 @@ function gts_ideal = grafica_tobillo_s_ideal()
     % Grafica tobillo subida ideal
     
     % Eje X de puntos originales
-    xH = 0:5:100;
+    xH = 0:10:200;
     
-    % Para asegurarnos de que la componente X va de 0 a 100
+    % Para asegurarnos de que la componente X va de 0 a 200
     xH(1) = 0;
-    xH(end) = 100;
+    xH(end) = 200;
    
     % Componente X de evaluacion
-    xR = 0:0.05:100; 
+    xR = 0:1:200; 
     
     % Componente Y de puntos originales
     % Se termina en el mismo punto en el que se empieza
@@ -32,7 +32,7 @@ function gts_ideal = grafica_tobillo_s_ideal()
     
     % Representacion de la curva de movimiento sin utilizar filtros
     gts_ideal = [xR*duration,m];
-    gts_ideal = gts_ideal(2003:end);
+    gts_ideal = gts_ideal(203:end);
     
     % xlabel('Tiempo de movimiento (ms)');
     % ylabel('Ángulo del tobillo (º)');

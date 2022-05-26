@@ -2,14 +2,14 @@ function gcb_ideal = grafica_cadera_b_ideal()
     % Grafica cadera bajada ideal
     
     % Eje X de puntos originales
-    xH = 0:5:100;
+    xH = 0:10:200;
     
-    % Para asegurarnos de que la componente X va de 0 a 100
+    % Para asegurarnos de que la componente X va de 0 a 200
     xH(1) = 0;
-    xH(end) = 100;
+    xH(end) = 200;
    
     % Componente X de evaluacion
-    xR = 0:0.05:100; 
+    xR = 0:1:200; 
     
     % Componente Y de puntos originales
     % Se termina en el mismo punto en el que se empieza
@@ -32,9 +32,9 @@ function gcb_ideal = grafica_cadera_b_ideal()
     
     % Representacion de la curva de movimiento sin utilizar filtros
     gcb_ideal = [xR*duration,m];
-    gcb_ideal = gcb_ideal(2003:end);
+    gcb_ideal = gcb_ideal(203:end);
     
-    % xlabel('Tiempo de movimiento (ms)');
-    % ylabel('Ángulo de la cadera (º)');
-    % plot(gcb_ideal);
+%     xlabel('Tiempo de movimiento (ms)');
+%     ylabel('Ángulo de la cadera (º)');
+%     plot(gcb_ideal);
 end
