@@ -1,2 +1,0 @@
-# SRS
- Stair Rehabilitation Studio
